@@ -20,7 +20,7 @@ public class HelloController {
     @FXML
     public Circle Arrow;
     @FXML
-    Circle ball;
+    public Circle ball;
     @FXML
     public TextField VelocityBox;
     @FXML
@@ -32,16 +32,13 @@ public class HelloController {
     double initialYVelocity;
     double timeOfFlight;
 
-
     public void Input(){
         initialVelocity=Double.parseDouble(VelocityBox.getText());
         angle=Math.toRadians(Double.parseDouble(AngleBox.getText()));
         initialXVelocity = initialVelocity * Math.cos(angle)*1.4;
         initialYVelocity = initialVelocity * Math.sin(angle)*1.4;
-        System.out.println(initialVelocity+" "+angle);
         timeOfFlight = (2 * initialVelocity) / GRAVITY;
     }
-
 
     Double posX;
     Double posY;
@@ -62,9 +59,6 @@ public class HelloController {
         appleSpeed=randomNumber;
     }
 
-
-
-
     public void motion(){
 
         new AnimationTimer() {
@@ -78,13 +72,29 @@ public class HelloController {
                 Circle dot=new Circle(posX+800, posY+602, 1, Color.BLACK);
                 Apane.getChildren().add(dot);
                 time += 0.01;
+
+                double n=804+Arrow.getCenterX();
+                double m=ball.getCenterX();
+                double k=388-ball.getCenterY();
+                double l=-Arrow.getCenterY();
+
+                //System.out.println(n+",   "+m + "n-m = "+(n-m)/*+" "+"Y:"+" "+Math.abs(Arrow.getCenterY())+","+ball.getCenterY()*/);
+                System.out.println(k+":   "+l+":   k-l="+(l-k));
+                //double q=Math.abs((ball.getCenterX()-(804+Arrow.getCenterX())));
+                //double p=Math.abs(((ball.getCenterY()-(-Arrow.getCenterY()))));
+                //if (q<=30 && p<=30) {
+                    //stop();
+                //};
+                if(Math.abs(n-m)<=30 && Math.abs(k-l)<=20){
+                    stop();
+                }
                 if (posY >=9) {
                     stop();
                 }
             }
             private void updateBallPosition() {
-                posX =5-initialXVelocity * time;
-                posY =5-initialYVelocity * time + 0.5 * GRAVITY * time * time;
+                posX =-initialXVelocity * time;
+                posY =-initialYVelocity * time + 0.5 * GRAVITY * time * time;
                 if (posY >= 455) {
                     posY = Double.valueOf(455);
                     time = 0.0;
@@ -104,7 +114,17 @@ public class HelloController {
                 Circle dot=new Circle(x+30, y+225, 1, Color.BLACK);
                 Apane.getChildren().add(dot);
                 time += 0.05;
-                if (y >=387) {
+                //double q=Math.abs((ball.getCenterX()-(804+Arrow.getCenterX())));
+                //double p=Math.abs(((ball.getCenterY()-Arrow.getCenterY())));
+
+                double n=804+Arrow.getCenterX();
+                double m=ball.getCenterX();
+                double k=388-ball.getCenterY();
+                double l=-Arrow.getCenterY();
+                if(Math.abs(n-m)<=30 && Math.abs(k-l)<=20){
+                    stop();
+                }
+                if (y >=387 ) {
                     stop();
                 }
             }
