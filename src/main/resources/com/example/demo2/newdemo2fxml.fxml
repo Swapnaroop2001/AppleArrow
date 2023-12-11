@@ -19,7 +19,7 @@
       <Button fx:id="projectileBtn" layoutX="15.0" layoutY="157.0" mnemonicParsing="false" onAction="#motion" prefHeight="27.0" prefWidth="99.0" text="Show motion" />
       <Circle fx:id="ball" layoutX="20.0" layoutY="222.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="Arrow" layoutX="800.0" layoutY="600.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
-      <Button fx:id="SubmitBtn" layoutX="242.0" layoutY="78.0" mnemonicParsing="false" onAction="#Input" prefHeight="27.0" prefWidth="62.0" text="Submit" />
+
       <Line endX="-96.07107543945312" endY="-36.0" layoutX="125.0" layoutY="272.0" startX="-125.0" startY="-36.0" strokeWidth="3.0" />
       <Line endX="900.0" endY="139.0" layoutX="169.0" layoutY="474.0" startX="-175.0" startY="139.0" strokeWidth="2.0" />
    </children>
