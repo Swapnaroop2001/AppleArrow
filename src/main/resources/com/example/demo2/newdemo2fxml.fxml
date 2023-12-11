@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -8,18 +7,18 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Apane" prefHeight="655.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+<AnchorPane fx:id="Apane" style="background" prefHeight="655.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
    <children>
-      <TextField fx:id="VelocityBox" layoutX="39.0" layoutY="65.0" prefHeight="27.0" prefWidth="48.0" />
-      <TextField fx:id="AngleBox" layoutX="192.0" layoutY="64.0" prefHeight="27.0" prefWidth="48.0" />
+      <TextField fx:id="VelocityBox" layoutX="47.0" layoutY="65.0" prefHeight="27.0" prefWidth="40.0" />
+      <TextField fx:id="AngleBox" layoutX="192.0" layoutY="65.0" prefHeight="27.0" prefWidth="40.0" />
       <Label layoutX="239.0" layoutY="111.0" />
       <Label fx:id="label3" layoutX="308.0" layoutY="65.0" prefHeight="26.0" prefWidth="59.0" text="33.33" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font></Label>
       <Button fx:id="projectileBtn" layoutX="615.0" layoutY="22.0" mnemonicParsing="false" onAction="#motion" prefHeight="67.0" prefWidth="99.0" text="THROW" />
-      <Circle fx:id="ball" fill="WHITE" layoutX="20.0" layoutY="222.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fx:id="Arrow" fill="WHITE" layoutX="800.0" layoutY="600.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ball" fill="WHITE" layoutX="20.0" layoutY="222.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Arrow" fill="WHITE" layoutX="865.0" layoutY="605.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
 
       <Line endX="-96.07107543945312" endY="-36.0" layoutX="125.0" layoutY="272.0" startX="-125.0" startY="-36.0" stroke="WHITE" strokeWidth="3.0" />
       <Line endX="900.0" endY="139.0" layoutX="169.0" layoutY="474.0" startX="-175.0" startY="139.0" stroke="#856222" strokeWidth="2.0" />
