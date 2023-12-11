@@ -7,7 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
@@ -19,7 +20,23 @@ public class HelloController {
     public Label label3;
     Double appleSpeed;
 
+
     public void initialize() {
+        Image backgroundImage = new Image("bg2.jpeg"); // Change 'background.jpg' to your image file path
+
+        // Create a background image
+        BackgroundImage background = new BackgroundImage(
+                backgroundImage,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundRepeat.NO_REPEAT,
+                BackgroundPosition.DEFAULT,
+                new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, true, true, true, true)
+        );
+
+        // Set the background image to the root pane
+        Apane.setBackground(new Background(background));
+
+
         String j=String.valueOf(count);
         LabelCount.setText(j);
         double randomNumber = 100*Math.random();
@@ -68,8 +85,8 @@ public class HelloController {
         if (count>0){
             initialVelocity=Double.parseDouble(VelocityBox.getText());
             angle=Math.toRadians(Double.parseDouble(AngleBox.getText()));
-            initialXVelocity = initialVelocity * Math.cos(angle)*1.4;
-            initialYVelocity = initialVelocity * Math.sin(angle)*1.4;
+            initialXVelocity = initialVelocity * Math.cos(angle)*4.5;
+            initialYVelocity = initialVelocity * Math.sin(angle)*4.5;
             timeOfFlight = (2 * initialVelocity) / GRAVITY;
 
             new AnimationTimer() {
