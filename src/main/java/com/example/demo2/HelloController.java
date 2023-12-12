@@ -4,12 +4,20 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class HelloController {
-    int count=10;
+
+
+
+    @FXML
+     Label YW;
+
+
+    int count=5;
     @FXML
     public Pane Apane;
     public Label label3;
@@ -17,6 +25,12 @@ public class HelloController {
 
 
     public void initialize() {
+        Image aple= new Image("rtyu.png");
+        ImageView imgv=new ImageView();
+        imgv.setImage(aple);
+        imgv.setX(100);
+        imgv.setY(200);
+
         Image backgroundImage = new Image("bg2.jpeg");
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,
@@ -52,22 +66,22 @@ public class HelloController {
     double initialXVelocity;
     double initialYVelocity;
 
-
-
-
     Double posX;
     Double posY;
-    private static final double GRAVITY = 9.81; // Acceleration due to gravity (m/s^2)
+    private static final double GRAVITY = 9.81;
 
     @FXML
     Label LabelCount;
     public void Reset(){
-        count=10;
+        count=5;
         initialize();
         LabelCount.setText(String.valueOf(count));
     }
 
     public void motion(){
+
+
+
         if (count>0){
             initialVelocity=Double.parseDouble(VelocityBox.getText());
             angle=Math.toRadians(Double.parseDouble(AngleBox.getText()));
@@ -83,7 +97,7 @@ public class HelloController {
                     double y=0.5*GRAVITY*time*time;
                     ball.setCenterY(y);
                     ball.setCenterX(x);
-                    Circle dot=new Circle(x+30, y+225, 1, Color.WHITE);
+                    Circle dot=new Circle(x+10, y+217, 1, Color.WHITE);
                     Apane.getChildren().add(dot);
                     time += 0.05;
                     double n=833+Arrow.getCenterX();
@@ -91,7 +105,8 @@ public class HelloController {
                     double k=388-ball.getCenterY();
                     double l=6-Arrow.getCenterY();
                     System.out.println(n+"   "+m);
-                    if( Math.abs(k-l)<18 && Math.abs(m-n)<10){
+                    if( Math.abs(k-l)<18 && Math.abs(m-n)<5){
+                        YW.setText("You Won!");
                         stop();
                     }
                     if (y >=387 ) {
@@ -124,7 +139,8 @@ public class HelloController {
 
                     System.out.println();
 
-                    if( Math.abs(k-l)<18 && Math.abs(m-n)<10){
+                    if( Math.abs(k-l)<18 && Math.abs(m-n)<5){
+                        YW.setText("You Won!");
                         stop();
                     }
                     if (posY>=9) {
