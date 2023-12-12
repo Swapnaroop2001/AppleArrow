@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 
 public class HelloController {
 
@@ -17,19 +18,37 @@ public class HelloController {
      Label YW;
 
 
+
     int count=5;
     @FXML
     public Pane Apane;
     public Label label3;
     Double appleSpeed;
+    Image arr= new Image("ty.png");
+    Image appleimg=new Image("aedapl.png");
+    ImageView imgv=new ImageView();
+    ImageView imgvapple=new ImageView();
 
 
     public void initialize() {
-        Image aple= new Image("rtyu.png");
-        ImageView imgv=new ImageView();
-        imgv.setImage(aple);
-        imgv.setX(100);
-        imgv.setY(200);
+
+        imgv.setImage(arr);
+        imgv.setFitHeight(100*0.4);
+        imgv.setFitWidth(100*0.5);
+        imgv.setX(838);
+        imgv.setY(590);
+        Apane.getChildren().add(imgv);
+        Apane.getChildren().remove(Arrow);
+
+        imgvapple.setImage(appleimg);
+        imgvapple.setFitHeight(100*0.4);
+        imgvapple.setFitWidth(100*0.7);
+        imgvapple.setX(-16);
+        imgvapple.setY(199);
+        Apane.getChildren().add(imgvapple);
+        //Apane.getChildren().remove(ball);
+
+
 
         Image backgroundImage = new Image("bg2.jpeg");
         BackgroundImage background = new BackgroundImage(
@@ -73,13 +92,13 @@ public class HelloController {
     @FXML
     Label LabelCount;
     public void Reset(){
+
         count=5;
         initialize();
         LabelCount.setText(String.valueOf(count));
     }
 
     public void motion(){
-
 
 
         if (count>0){
@@ -96,6 +115,8 @@ public class HelloController {
                     double x = appleSpeed * time;
                     double y=0.5*GRAVITY*time*time;
                     ball.setCenterY(y);
+                    imgvapple.setY(y+199);
+                    imgvapple.setX(x-15);
                     ball.setCenterX(x);
                     Circle dot=new Circle(x+10, y+217, 1, Color.WHITE);
                     Apane.getChildren().add(dot);
@@ -104,12 +125,11 @@ public class HelloController {
                     double m=ball.getCenterX();
                     double k=388-ball.getCenterY();
                     double l=6-Arrow.getCenterY();
-                    System.out.println(n+"   "+m);
-                    if( Math.abs(k-l)<18 && Math.abs(m-n)<5){
+                    if( Math.abs(k-l)<15 && Math.abs(m-n)<15){
                         YW.setText("You Won!");
                         stop();
                     }
-                    if (y >=387 ) {
+                    if (y >=380 ) {
                         stop();
                     }
                 }
@@ -121,8 +141,12 @@ public class HelloController {
                 double time = 0;
                 @Override
                 public void handle(long now) {
+
+                    //Arrow Image
+
                     posX =-initialXVelocity * time;
                     posY =(-initialYVelocity * time )+ (0.5 * GRAVITY * time * time);
+
                     if (posY >= 455) {
                         posY = Double.valueOf(455);
                         time = 0.0;
@@ -130,20 +154,20 @@ public class HelloController {
                     time += 0.05;
                     Arrow.setCenterX(posX);
                     Arrow.setCenterY(posY);
-                    Circle dot=new Circle(posX+860, posY+602, 1, Color.WHITE);
+                    Circle dot=new Circle(posX+872, posY+598, 1, Color.WHITE);
                     Apane.getChildren().add(dot);
                     double n=833+Arrow.getCenterX();
                     double m=ball.getCenterX();
                     double k=388-ball.getCenterY();
                     double l=6-Arrow.getCenterY();
+                    imgv.setX(n);
+                    imgv.setY(590-l);
 
-                    System.out.println();
-
-                    if( Math.abs(k-l)<18 && Math.abs(m-n)<5){
+                    if( Math.abs(k-l)<15 && Math.abs(m-imgv.getX())<15){
                         YW.setText("You Won!");
                         stop();
                     }
-                    if (posY>=9) {
+                    if (posY>=3) {
                         stop();
                     }
                 }
@@ -154,6 +178,7 @@ public class HelloController {
             LabelCount.setText(c);
         }
         else {
+            YW.setText("Your Trials Are Over");
             LabelCount.setText("0");
         }
 
