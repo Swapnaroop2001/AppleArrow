@@ -20,7 +20,7 @@
       <Circle fx:id="ball" fill="#fc2525" layoutX="20.0" layoutY="222.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fx:id="Arrow" fill="WHITE" layoutX="865.0" layoutY="605.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
 
-      <Line endX="-96.07107543945312" endY="-36.0" layoutX="125.0" layoutY="272.0" startX="-125.0" startY="-36.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="-101.0" endY="-36.0" layoutX="125.0" layoutY="272.0" startX="-125.0" startY="-36.0" stroke="#5e3517" strokeWidth="5.0" />
       <Line endX="900.0" endY="139.0" layoutX="169.0" layoutY="474.0" startX="-175.0" startY="139.0" stroke="#856222" strokeWidth="2.0" />
       <Label layoutX="14.0" layoutY="21.0" text="Enter Arrow" textFill="WHITE">
          <font>
@@ -67,7 +67,7 @@
          <font>
             <Font size="18.0" />
          </font></Label>
-      <Label fx:id="YW" layoutX="345.0" layoutY="160.0" prefHeight="24.0" prefWidth="329.0" textFill="WHITE">
+      <Label fx:id="YW" layoutX="348.0" layoutY="153.0" prefHeight="24.0" prefWidth="329.0" textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>

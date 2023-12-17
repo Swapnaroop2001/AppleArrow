@@ -1,6 +1,7 @@
 package com.example.demo2;
 import javafx.animation.AnimationTimer;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -12,14 +13,9 @@ import javafx.stage.Stage;
 
 public class HelloController {
 
-
-
-    @FXML
-     Label YW;
-
-
-
     int count=5;
+    @FXML
+    Label YW;
     @FXML
     public Pane Apane;
     public Label label3;
@@ -31,24 +27,20 @@ public class HelloController {
 
 
     public void initialize() {
-
         imgv.setImage(arr);
         imgv.setFitHeight(100*0.4);
         imgv.setFitWidth(100*0.5);
         imgv.setX(838);
-        imgv.setY(590);
+        imgv.setY(588);
         Apane.getChildren().add(imgv);
         Apane.getChildren().remove(Arrow);
-
         imgvapple.setImage(appleimg);
         imgvapple.setFitHeight(100*0.4);
         imgvapple.setFitWidth(100*0.7);
         imgvapple.setX(-16);
         imgvapple.setY(199);
         Apane.getChildren().add(imgvapple);
-        //Apane.getChildren().remove(ball);
-
-
+        Apane.getChildren().remove(ball);
 
         Image backgroundImage = new Image("bg2.jpeg");
         BackgroundImage background = new BackgroundImage(
@@ -58,6 +50,7 @@ public class HelloController {
                 BackgroundPosition.DEFAULT,
                 new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, true, true, true, true)
         );
+
         Apane.setBackground(new Background(background));
         String j=String.valueOf(count);
         LabelCount.setText(j);
@@ -92,15 +85,17 @@ public class HelloController {
     @FXML
     Label LabelCount;
     public void Reset(){
-
+        YW.setText("");
+        imgv.setX(838);
+        imgv.setY(590);
+        imgvapple.setX(-16);
+        imgvapple.setY(199);
         count=5;
         initialize();
         LabelCount.setText(String.valueOf(count));
     }
 
     public void motion(){
-
-
         if (count>0){
             initialVelocity=Double.parseDouble(VelocityBox.getText());
             angle=Math.toRadians(Double.parseDouble(AngleBox.getText()));
@@ -141,12 +136,9 @@ public class HelloController {
                 double time = 0;
                 @Override
                 public void handle(long now) {
-
                     //Arrow Image
-
                     posX =-initialXVelocity * time;
                     posY =(-initialYVelocity * time )+ (0.5 * GRAVITY * time * time);
-
                     if (posY >= 455) {
                         posY = Double.valueOf(455);
                         time = 0.0;
