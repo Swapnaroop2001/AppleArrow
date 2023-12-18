@@ -1,7 +1,7 @@
 # Projectile Archer
 "Projectile Archer" is an exhilarating game that combines the thrill of archery with the challenge of mastering projectile motion physics. Developed using JavaFX and SceneBuilder, this game offers players an immersive experience where accuracy, timing, and an understanding of physics are key to success.
 
-## About Game
+## About Game:
 The gameplay revolves around applying the principles of projectile motion – considering angles, velocity, and gravitational forces – to accurately aim and shoot arrows at targets. Players can adjust the angle and force of their shots, taking into account the trajectory of the arrow influenced by gravity.
 
 ## How It's Made:
@@ -9,22 +9,36 @@ The gameplay revolves around applying the principles of projectile motion – co
 **Tech used:** Java, JavaFX, Intellij, Scene-Builder.
 Visually, "Projectile Archer" boasts stunning graphics created using JavaFX, bringing to life vibrant landscapes and engaging environments. The immersive sound effects and responsive animations further enhance the gaming experience, making every shot feel impactful and realistic. Beyond its entertainment value, "Projectile Archer" serves as an educational tool, allowing players to grasp fundamental concepts of physics in a fun and interactive way. By experimenting with different angles and forces, players intuitively learn how these variables affect the trajectory of a projectile.
 
-## Examples:
-Take a look at these couple of Screenshots of the game.
-<img align="right" alt="coding" width="400" src="Projectile-archer.gif">
+## How to Navigate:
 
 1. **Launch the Game**:
-Getting Started
 Open your preferred Java IDE (IntelliJ IDEA or Eclipse). Load the Projectile Archer game project. Build and run the project to launch the game.
 
 2. **Main Game Screen**:
 Step into the captivating world of the Arrow Apple adventure within the Main Game Screen! Here, the essence of archery entwines with the allure of projectile motion simulation, offering an immersive experience that combines picturesque visuals and strategic gameplay.
 
-Key Elements:
+3. **Set Your Angle**:
+Enter your desired arrow launch angle in the input box.
+
+4. **Launch Your Arrow**:
+Click the "Launch" button to initiate the arrow launch. The button will be disabled until the trajectory is complete.
+
+5. **Evaluate Trajectory**:
+After each unsuccessful trial, observe the dotted green lines representing the trajectories. Use this visual feedback to optimize your angle for the next attempt.
+
+6. **Reset or Exit**:
+If needed, use the "Reset" button to start anew or the "Exit" button to conclude your Arrow Apple adventure.
+
+7. **Trials Remaining**:
+Keep track of the remaining trials displayed on the label.
+
+![lkop](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/f17bd4be-aef6-4369-a5e6-d4e1277d6244)
+
+
+## Key Elements:
 
 ● Visual Landscape:
 The ground level is adorned with a vibrant green shade, resembling a lush grassy field. Below a certain height, the color transitions to a brown shade, resembling soil.
-![lkop](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/f17bd4be-aef6-4369-a5e6-d4e1277d6244)
 
 ● Arrow Placement:
 A stylized arrow is positioned at ground level, ready for launch. The arrow appears as if
@@ -49,16 +63,23 @@ simulates their projectile motion based on the entered angle and predefined para
 
 
 
-● Keep track of the remaining trials displayed on the label.
+● Keep track of the remaining trials displayed on the label. If you run out of all trials the game will be over!
 
 ![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/bd2f6985-e5ec-41d5-9f00-0f1f23516559)
 
 
 
 ● Outcome Display:
-If the arrow hits the apple, you win! A congratulatory message may appear, and you proceed to replay the game.
+If the arrow hits the apple, you win! A congratulatory message may appear, and you proceed to Play the game again.
 
 ![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/3de48589-20ce-433d-97aa-4dbf75fb2e5b)
+
+
+## Contact Information
+I value your experience with Projectile Archer and am here to assist you. If you have any questions, or feedback, or encounter any issues, feel free to reach out to me.
+swapnaroop2001@gmail.com
+
+We appreciate your support and look forward to hearing from you!
 
 
 
