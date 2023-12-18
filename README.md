@@ -1,26 +1,21 @@
 # Projectile Archer
 "Projectile Archer" is an exhilarating game that combines the thrill of archery with the challenge of mastering projectile motion physics. Developed using JavaFX and SceneBuilder, this game offers players an immersive experience where accuracy, timing, and an understanding of physics are key to success.
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+
 
 ![alt tag](http://placecorgi.com/1200/650)
 
+## About Game
+The gameplay revolves around applying the principles of projectile motion – considering angles, velocity, and gravitational forces – to accurately aim and shoot arrows at targets. Players can adjust the angle and force of their shots, taking into account the trajectory of the arrow influenced by gravity.
+
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** Java, JavaFX, Intellij, Scene-Builder.
+Visually, "Projectile Archer" boasts stunning graphics created using JavaFX, bringing to life vibrant landscapes and engaging environments. The immersive sound effects and responsive animations further enhance the gaming experience, making every shot feel impactful and realistic. Beyond its entertainment value, "Projectile Archer" serves as an educational tool, allowing players to grasp fundamental concepts of physics in a fun and interactive way. By experimenting with different angles and forces, players intuitively learn how these variables affect the trajectory of a projectile.
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
-## Optimizations
-*(optional)*
-
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
-
-## Lessons Learned:
-
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *wow I actually did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these couple of Screenshots of the game.
 
 **Palettable:** https://github.com/alecortega/palettable
 
