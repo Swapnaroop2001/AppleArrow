@@ -77,9 +77,10 @@ If the arrow hits the apple, you win! A congratulatory message may appear, and y
 
 ## Contact Information
 I value your experience with Projectile Archer and am here to assist you. If you have any questions, or feedback, or encounter any issues, feel free to reach out to me.
-swapnaroop2001@gmail.com
 
-We appreciate your support and look forward to hearing from you!
+E-mail: swapnaroop2001@gmail.com
+
+I appreciate your support and look forward to hearing from you!
 
 
 
