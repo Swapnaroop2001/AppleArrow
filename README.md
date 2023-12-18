@@ -12,7 +12,10 @@ Visually, "Projectile Archer" boasts stunning graphics created using JavaFX, bri
 ## Examples:
 Take a look at these couple of Screenshots of the game.
 <img align="right" alt="coding" width="400" src="Projectile-archer.gif">
-![save](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/837b5ea0-8b6d-4310-bc70-fcdec958d20b)
+![lkop](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/f17bd4be-aef6-4369-a5e6-d4e1277d6244)
+![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/b6ded157-8438-4246-8db5-18ba8af111d7)
+
+
 
 
 
