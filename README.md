@@ -12,17 +12,51 @@ Visually, "Projectile Archer" boasts stunning graphics created using JavaFX, bri
 ## Examples:
 Take a look at these couple of Screenshots of the game.
 <img align="right" alt="coding" width="400" src="Projectile-archer.gif">
+
+1. **Launch the Game**:
+Getting Started
+Open your preferred Java IDE (IntelliJ IDEA or Eclipse). Load the Projectile Archer game project. Build and run the project to launch the game.
+
+2. **Main Game Screen**:
+Step into the captivating world of the Arrow Apple adventure within the Main Game Screen! Here, the essence of archery entwines with the allure of projectile motion simulation, offering an immersive experience that combines picturesque visuals and strategic gameplay.
+
+Key Elements:
+
+● Visual Landscape:
+The ground level is adorned with a vibrant green shade, resembling a lush grassy field. Below a certain height, the color transitions to a brown shade, resembling soil.
 ![lkop](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/f17bd4be-aef6-4369-a5e6-d4e1277d6244)
 
-![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/7e6ff898-d09f-4af0-91cb-b8c06029e534)
+● Arrow Placement:
+A stylized arrow is positioned at ground level, ready for launch. The arrow appears as if
+embedded in the green grass.
 
+● Apple at Height:
+An apple is suspended at a pre-defined height, from where it is launched, challenging you to
+hit the target with precision.
 
+● Angle Input Box:
+At the top of the screen, there's an angle input box with a label, "Set your arrow angle here."
+Next to it is a space where you can enter the launch angle for your arrow.
 
+● Launch Button:
+To the right of the angle input box is the "Launch" button. After entering the desired angle, clicking this button initiates the arrow launch. Once pressed, the launch button is disabled until the arrow completes its trajectory.
 
+● Simulation of Projectile Motion:
+Upon pressing the launch button, both the arrow and the apple are launched, and the game
+simulates their projectile motion based on the entered angle and predefined parameters.
 
 ![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/b6ded157-8438-4246-8db5-18ba8af111d7)
 
+
+
+● Keep track of the remaining trials displayed on the label.
+
 ![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/bd2f6985-e5ec-41d5-9f00-0f1f23516559)
+
+
+
+● Outcome Display:
+If the arrow hits the apple, you win! A congratulatory message may appear, and you proceed to replay the game.
 
 ![image](https://github.com/Swapnaroop2001/AppleArrow/assets/75776020/3de48589-20ce-433d-97aa-4dbf75fb2e5b)
 
