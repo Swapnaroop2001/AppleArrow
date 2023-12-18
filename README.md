@@ -13,11 +13,7 @@ Visually, "Projectile Archer" boasts stunning graphics created using JavaFX, bri
 Take a look at these couple of Screenshots of the game.
 <img align="right" alt="coding" width="400" src="Projectile-archer.gif">
 
-**Palettable:** https://github.com/alecortega/palettable
 
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
 
 
 
