@@ -1,4 +1,4 @@
-# Projectile Archer
+# Apple's Arrow quest
 "Projectile Archer" is an exhilarating game that combines the thrill of archery with the challenge of mastering projectile motion physics. Developed using JavaFX and SceneBuilder, this game offers players an immersive experience where accuracy, timing, and an understanding of physics are key to success.
 
 ## About Game:
